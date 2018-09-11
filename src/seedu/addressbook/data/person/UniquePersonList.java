@@ -140,6 +140,9 @@ public class UniquePersonList implements Iterable<Person> {
         return Collections.unmodifiableList(internalList);
     }
 
+    public void sort() {
+        Collections.sort(this.internalList );
+    }
     @Override
     public Iterator<Person> iterator() {
         return internalList.iterator();
